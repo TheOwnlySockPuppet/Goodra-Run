@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "Boulder",
+"language": "GDScript",
+"path": "res://Boulder.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://PlayerChar.gd"
+}, {
+"base": "StaticBody2D",
+"class": "Rockslide",
+"language": "GDScript",
+"path": "res://Rockslide.gd"
+} ]
+_global_script_class_icons={
+"Boulder": "",
+"Player": "",
+"Rockslide": ""
+}
+
+[application]
+
+config/name="Goodra Run"
+run/main_scene="res://Level1.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
